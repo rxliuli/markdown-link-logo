@@ -1,0 +1,46 @@
+{
+  "name": "markdown-link-logo",
+  "private": true,
+  "version": "0.1.0",
+  "main": "./dist/extension.js",
+  "description": "package.description",
+  "scripts": {
+    "dev": "pnpm build --watch",
+    "build": "vite build",
+    "release": "pnpm build && vsce package --no-dependencies"
+  },
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "devDependencies": {
+    "@liuli-util/markdown-util": "^0.7.1",
+    "@liuli-util/vite-plugin-node": "^0.7.0",
+    "@types/lodash-es": "^4.17.9",
+    "@types/markdown-it": "^13.0.1",
+    "@types/node": "^20.6.0",
+    "@types/vscode": "^1.71.0",
+    "change-case": "^4.1.2",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "markdown-it": "^13.0.1",
+    "pathe": "^1.1.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vitest": "^0.34.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rxliuli/markdown-link-logo.git"
+  },
+  "license": "MIT",
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "contributes": {
+    "markdown.markdownItPlugins": true,
+    "markdown.previewStyles": [
+      "dist/style.css"
+    ],
+    "markdown.previewScripts": []
+  }
+}
