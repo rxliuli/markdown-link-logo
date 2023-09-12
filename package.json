@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "main": "./dist/extension.js",
-  "description": "package.description",
+  "description": "Display the logos of links in the markdown preview",
   "scripts": {
     "dev": "pnpm build --watch",
     "build": "vite build",
@@ -42,5 +42,7 @@
       "dist/style.css"
     ],
     "markdown.previewScripts": []
-  }
+  },
+  "publisher": "rxliuli",
+  "icon": "dist/icon.png"
 }
